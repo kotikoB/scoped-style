@@ -1,0 +1,33 @@
+{
+  "name": "scoped-style",
+  "version": "1.8.0",
+  "main": "dist/scoped-style.js",
+  "repository": "https://github.com/sadick254/scoped-css.git",
+  "author": "Sadick <sadickjunior@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "ava": "2.2.0",
+    "rollup": "^0.66.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "sinon": "^7.5.0",
+    "vhtml": "^2.2.0"
+  },
+  "types": "@types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "ava"
+  },
+  "files": [
+    "dist/*",
+    "@types/*"
+  ],
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  }
+}
